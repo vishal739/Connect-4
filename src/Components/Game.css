@@ -1,0 +1,91 @@
+:root{
+    --body-backgroundColor: #2effff;
+    --board-backgroundColor: #2581e5;
+    --board-borderColor: #d7de87;
+    --panel-bg: #2581e5;
+    --panel-border: #d7de87;
+    --player-0: white;
+    --player-1: #ffd100;
+    --player-2: red;
+}
+body{
+    background-color: var(--body-backgroundColor);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.panel{
+    position: absolute;
+    background-color: var(--panel-bg);
+    border: 5px solid var(--panel-border);
+    -webkit-box-shadow: 7px 5px 15px 3px black;
+    box-shadow: 7px 5px 15px 3px black;
+    z-index: 1;
+    width: 300px;
+    margin-left: -160px;
+    height: 80px;
+    left: 50%;
+}
+.header{
+    top: 29px;
+}   
+.headerText{
+    position: relative;
+    top: 26%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer{
+    bottom: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer button {
+    margin-top: 13px;
+    margin-left: 10px;  
+    width: 125px;
+    height: 50px;
+    background-color: lightblue;
+    font-size: 15px;
+    /* -webkit-box-shadow: 7px 2px 15px 3px #d7de87;
+    box-shadow: 7px 2px 14px 3px #d7de87; */
+    border: 5px solid #d7de87;
+    font-weight: bold;
+}
+
+.footer button:hover{
+    background-color: rgb(52, 150, 255)
+}
+.GameBoard {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    padding: 20px;
+    width: 435px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    top: 15%;
+    background-color: var(--board-backgroundColor);
+    border: 5px solid var(--board-borderColor);
+    border-radius: 8%;
+    -webkit-box-shadow: 7px 5px 15px 3px black;
+    box-shadow: 7px 5px 15px 3px black;
+}
+.GameCircle{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.Player_0{
+    background-color: var(--player-0);
+}
+.Player_1{
+    background-color: var(--player-1);
+}
+
+.Player_2{
+    background-color: var(--player-2);
+}
