@@ -12,6 +12,17 @@ body{
     background-color: var(--body-backgroundColor);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.container{
+    position: relative;
+    margin: auto;
+    width: 1080px;
+    height: 720px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .panel{
     position: absolute;
     background-color: var(--panel-bg);
@@ -89,3 +100,4 @@ body{
 .Player_2{
     background-color: var(--player-2);
 }
+
